@@ -1,8 +1,12 @@
 // webpack.config.js
 const path = require('path')
+// 编译.vue文件
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
+// 注入HTML
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+// 提取CSS
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+// 清除冗余文件
 const CleanWebpackPlugin = require('clean-webpack-plugin')
 // webpack4无法自动压缩.css文件，需要下面的插件支持
 const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
@@ -21,9 +25,11 @@ module.exports = {
   },
   module: {
     rules: [{
+      // vue-loader
       test: /\.vue$/,
       loader: 'vue-loader'
     }, {
+      // babel-loader (ES6)
       test: /\.js$/,
       loader: 'babel-loader',
       exclude: file => (
@@ -31,6 +37,7 @@ module.exports = {
         !/\.vue\.js/.test(file)
       )
     }, {
+      // css-loader
       test: /\.css$/,
       use: [
         MiniCssExtractPlugin.loader,
@@ -38,11 +45,13 @@ module.exports = {
         'postcss-loader',
       ]
     }, {
+      // eslint-loader
       enforce: 'pre',
       test: /\.(js|vue)$/,
       loader: 'eslint-loader',
       exclude: /node_modules/
     }, {
+      // file-loader 自动copy引用的文件
       test: /\.(png|jpg|gif)$/,
       use: [{
         loader: 'file-loader',
