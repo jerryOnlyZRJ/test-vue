@@ -1,6 +1,6 @@
 module.exports = {
-    plugins: {
-        'postcss-cssnext':{},
-        'cssnano': {}
-    }
+	plugins: {
+		'postcss-cssnext': {},
+		'cssnano': {}
+	}
 }
