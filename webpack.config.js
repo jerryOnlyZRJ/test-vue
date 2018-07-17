@@ -14,6 +14,7 @@ const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 
 module.exports = {
+  mode: 'development',
   output: {
     path: path.join(__dirname, './dist/assets'),
     publicPath: '/',
@@ -70,12 +71,7 @@ module.exports = {
         }, {
           loader: 'postcss-loader',
           options: {
-            ident: 'postcss',
-            plugins: () => [
-              postcssPresetEnv({
-                stage: 0
-              })
-            ]
+            ident: 'postcss'
           }
         }
       ]

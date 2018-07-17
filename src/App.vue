@@ -1,17 +1,19 @@
 <template>
   <div id="app">
-    <img src="./assets/nmkv.jpg">
-    <HelloWorld msg="Welcome to Your Vue.js SPA App"/>
+    <!-- <img src="./assets/nmkv.jpg"> -->
+    <HelloWorld></HelloWorld>
   </div>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
+import DropMenu from './components/DropMenu/DropMenu.vue'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    HelloWorld,
+    DropMenu
   }
 }
 </script>
