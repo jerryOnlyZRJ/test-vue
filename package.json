@@ -2,7 +2,7 @@
   "name": "vue-spa-scaffold",
   "version": "1.0.0",
   "description": "A vue SPA scaffold",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --mode development",
@@ -17,15 +17,15 @@
     "babel-preset-env": "^1.7.0",
     "babel-preset-stage-0": "^6.24.1",
     "clean-webpack-plugin": "^0.1.19",
-    "css-loader": "^0.28.11",
-    "cssnano": "^3.10.0",
+    "css-loader": "^2.1.1",
+    "cssnano": "^4.1.10",
     "eslint": "^4.19.1",
     "eslint-loader": "^2.0.0",
     "eslint-plugin-vue": "^4.5.0",
     "file-loader": "^1.1.11",
     "html-webpack-plugin": "^3.2.0",
     "mini-css-extract-plugin": "^0.4.0",
-    "optimize-css-assets-webpack-plugin": "^4.0.2",
+    "optimize-css-assets-webpack-plugin": "^5.0.1",
     "postcss-loader": "^2.1.5",
     "postcss-preset-env": "^5.2.1",
     "uglifyjs-webpack-plugin": "^1.2.5",
@@ -33,7 +33,7 @@
     "vue-style-loader": "^4.1.0",
     "webpack": "^4.11.1",
     "webpack-cli": "^3.0.3",
-    "webpack-dev-server": "^3.1.4"
+    "webpack-dev-server": "^3.2.1"
   },
   "dependencies": {
     "vue": "^2.5.16",
