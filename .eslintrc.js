@@ -1,6 +1,7 @@
 module.exports = {
   env: {
     browser: true,
+    node: true,
     es6: true
   },
   extends: ["eslint:recommended", "plugin:vue/essential"],
@@ -14,7 +15,7 @@ module.exports = {
   },
   plugins: ["vue"],
   rules: {
-    indent: ["error", 4],
+    indent: ["error", 2],
     "linebreak-style": ["error", "unix"],
     quotes: ["error", "single"],
     semi: ["error", "never"]
