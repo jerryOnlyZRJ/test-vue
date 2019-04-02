@@ -131,5 +131,11 @@ module.exports = {
       verbose: true,
       dry: false
     })
-  ]
+  ],
+  resolve: {
+    extensions: ['.js', '.vue'],
+    alias: {
+      '@': path.resolve(__dirname, 'src')
+    }
+  }
 }

@@ -7,8 +7,8 @@
 </template>
 
 <script>
-import Helloworld from '../../components/Helloworld/index.vue'
-import TestStyle from '../../components/TestStyle/index.vue'
+import Helloworld from '@/components/Helloworld'
+import TestStyle from '@/components/TestStyle'
 
 export default {
   name: 'Index',

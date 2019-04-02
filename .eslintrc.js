@@ -15,9 +15,11 @@ module.exports = {
   },
   plugins: ["vue"],
   rules: {
+    "no-console": "off",
     indent: ["error", 2],
     "linebreak-style": ["error", "unix"],
     quotes: ["error", "single"],
-    semi: ["error", "never"]
+    semi: ["error", "never"],
+    complexity: ["error", 4]
   }
 };
