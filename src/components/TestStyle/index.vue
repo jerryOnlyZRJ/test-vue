@@ -1,6 +1,6 @@
 <template>
   <div class="component">
-      这是test style component
+    这是test style component
   </div>
 </template>
 
@@ -10,6 +10,4 @@ export default {
 }
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

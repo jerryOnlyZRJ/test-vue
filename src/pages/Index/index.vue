@@ -3,21 +3,20 @@
     <Helloworld />
     这是index页面。
     <TestStyle />
-    </div>
+  </div>
 </template>
 
 <script>
-import Helloworld from "../../components/Helloworld/index.vue";
-import TestStyle from "../../components/TestStyle/index.vue";
+import Helloworld from '@/components/Helloworld'
+import TestStyle from '@/components/TestStyle'
 
 export default {
-  name: "Index",
+  name: 'Index',
   components: {
     Helloworld,
     TestStyle
   }
-};
+}
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>
